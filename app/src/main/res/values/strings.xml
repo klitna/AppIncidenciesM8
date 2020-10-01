@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="incidencesUrgence">
+        <item>Alta</item>
+        <item>Baja</item>
+        <item>Mediana</item>
+    </string-array>
+</resources>
