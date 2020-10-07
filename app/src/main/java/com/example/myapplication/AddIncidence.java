@@ -52,7 +52,6 @@ public class AddIncidence extends AppCompatActivity implements AdapterView.OnIte
                 }
             }
         });
-
     }
 
 
