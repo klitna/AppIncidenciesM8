@@ -9,7 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import java.util.ArrayList;
+
 public class ActivityMenuOpcions extends AppCompatActivity {
+
+    ArrayList<Incidence> incidences = new ArrayList<Incidence>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,8 @@ public class ActivityMenuOpcions extends AppCompatActivity {
 
     public void goToAddIncidence(){
         Intent intentAddIncidence = new Intent(this, AddIncidence.class);
+        intentAddIncidence.putExtra("incidencesList", incidences);
         startActivity(intentAddIncidence);
+
     }
 }

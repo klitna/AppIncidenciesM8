@@ -13,4 +13,8 @@ public class Incidence {
         this.name=name;
         this.urgence=urgence;
     }
+
+    public String getName(){
+        return this.name;
+    }
 }
