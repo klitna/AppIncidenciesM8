@@ -21,6 +21,7 @@ public class ActivityMenuOpcions extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i("btn_click", "El botó d'afegir incidència s'ha clicat");
+                goToAddIncidence();
             }
         });
     }

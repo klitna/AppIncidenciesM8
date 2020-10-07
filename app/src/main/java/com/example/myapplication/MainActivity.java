@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,11 +28,14 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("btn_click", "EL botó de login s'ha clicat");
                 String textUsername = username.getText().toString();
                 String textPassword = password.getText().toString();
-                if (textUsername.equals("admin") && textPassword == "admin") {
+                Context context = getApplicationContext();
+                int duration = Toast.LENGTH_SHORT;
+                if (textUsername.equals("admin") && textPassword.equals("admin")) {
                     Log.i("login_success", "Admin s'ha loguejat");
-                    title.setText("LOGGED IN SUCCESSFULY!");
+                    Toast.makeText(context,"Logged succesfully!", duration);
+                    goToMenu();
                 } else
-                    Log.i("login_success", "Error al loguearse");
+                    Toast.makeText(context,"Incorrect user or password", duration);
 
 
             }

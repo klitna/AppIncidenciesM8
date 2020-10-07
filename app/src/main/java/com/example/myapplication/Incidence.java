@@ -13,6 +13,4 @@ public class Incidence {
         this.name=name;
         this.urgence=urgence;
     }
-
-
 }
