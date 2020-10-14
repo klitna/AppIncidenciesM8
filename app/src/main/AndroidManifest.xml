@@ -3,14 +3,15 @@
     package="com.example.myapplication">
 
     <application
-        android:extractNativeLibs="false"
         android:allowBackup="true"
+        android:extractNativeLibs="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddIncidence"></activity>
+        <activity android:name=".ShowIncidences"></activity>
+        <activity android:name=".AddIncidence" />
         <activity android:name=".ActivityMenuOpcions" />
         <activity android:name=".MainActivity">
             <intent-filter>
